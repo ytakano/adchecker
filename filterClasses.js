@@ -103,10 +103,8 @@ Filter.fromText = function(text)
   var ret;
   var match = (text.indexOf("#") >= 0 ? true : null);
 
-  if (match)
-    ret = new InvalidFilter(text, "Element Filter!!!");
-  else if (text[0] == "!")
-    ret = new CommentFilter(text);
+  if (match || text[0] == "!")
+      return null;
   else
     ret = RegExpFilter.fromText(text);
 

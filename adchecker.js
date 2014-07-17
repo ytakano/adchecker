@@ -1,4 +1,5 @@
 var filterFiles = [
+    "Adblock_Plus_list.txt",
     "Liste_AR.txt",
     "abp_jp.txt",
     "abpindo.txt",
@@ -27,6 +28,15 @@ filterRule.prototype.addFile = function (file) {
     this.files[file] = null;
 }
 
+filterRule.prototype.matches = function (url) {
+    var sp = url.split('/');
+
+    if (sp.length > 3) {
+        return this.filter.matches(url, sp[2]);
+    } else {
+        return this.filter.matches(url);
+    }
+}
 
 function loadFilter() {
     var fs = require('fs');
@@ -47,6 +57,10 @@ function loadFilter() {
                 filters[rules[j]].addFile(filterFiles[i]);
             } else {
                 var rule = new filterRule(rules[j]);
+
+                if (rule.filter == null)
+                    continue;
+
                 rule.addFile(filterFiles[i]);
 
                 filters[rules[j]] = rule;
@@ -60,4 +74,27 @@ function loadFilter() {
     return filters;
 }
 
-loadFilter();
+var filters = loadFilter();
+var reader = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+reader.on('line', function (line) {
+    var result = {result: false, files: {}};
+    for (var key in filters) {
+        if (filters[key].matches(line)) {
+
+            result['result'] = true;
+            for (var i in filters[key].files) {
+                result['files'][i] = null;
+            }
+        }
+    }
+
+    console.log(result);
+});
+
+process.stdin.on('end', function () {
+    //do something
+});

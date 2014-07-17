@@ -16,3 +16,4 @@ curl -O 'https://raw.github.com/AdBlockPlusIsrael/EasyListHebrew/master/EasyList
 curl -O 'http://margevicius.lt/easylistlithuania.txt'
 curl -O 'https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt'
 curl -O 'https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abp_jp.txt'
+curl -O 'http://tofukko.r.ribbon.to/Adblock_Plus_list.txt'
