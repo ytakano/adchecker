@@ -104,7 +104,7 @@ Filter.fromText = function(text)
   var match = (text.indexOf("#") >= 0 ? true : null);
 
   if (match)
-    ret = new InvalidFilter(text, Utils.getString("Element Filter!!!"));
+    ret = new InvalidFilter(text, "Element Filter!!!");
   else if (text[0] == "!")
     ret = new CommentFilter(text);
   else
@@ -561,8 +561,8 @@ RegExpFilter.prototype =
    * @param {Boolean} thirdParty should be true if the URL is a third-party request
    * @return {Boolean} true in case of a match
    */
-  matches: function(location) {
-      return this.regexp.test(location);
+  matches: function(location, docDomain) {
+      return this.isActiveOnDomain(docDomain) && this.regexp.test(location);
   }
 
   // matches: function(location, contentType, docDomain, thirdParty)
