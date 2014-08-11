@@ -25,7 +25,7 @@ function filterRule (rule) {
 }
 
 filterRule.prototype.addFile = function (file) {
-    this.files[file] = null;
+    this.files[file] = true;
 }
 
 filterRule.prototype.matches = function (url) {
@@ -69,7 +69,7 @@ function loadFilter() {
         }
     }
 
-    console.log(n);
+    // console.log(n);
 
     return filters;
 }
@@ -80,15 +80,15 @@ var reader = require('readline').createInterface({
     output: process.stdout
 });
 
+reader.setPrompt('');
+reader.prompt();
+
 reader.on('line', function (line) {
-    var result = {result: false, files: {}};
+    var result = {result: false, rules: {}};
     for (var key in filters) {
         if (filters[key].matches(line)) {
-
             result['result'] = true;
-            for (var i in filters[key].files) {
-                result['files'][i] = null;
-            }
+            result['rules'][filters[key].filter.text] = Object.keys(filters[key].files);
         }
     }
 

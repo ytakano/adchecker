@@ -2,7 +2,7 @@
 ! Title: 豆腐フィルタ
 ! Homepage: http://tofukko.r.ribbon.to/abp.html
 !
-! 最終更新 2014/07/16 22:30
+! 最終更新 2014/08/09 0:31
 !
 !--------通販サイト--------!
 amazon.co$third-party,~xmlhttprequest,domain=~amazon.co.jp|~amazon.com|~amazon.co.uk|~amazon.co.uk|~amazon.co.de|~aucfan.com|~book.akahoshitakuya.com|~book.asahi.com|~booklog.jp|~bookvinegar.jp|~mail.google.com|~javari.jp|~kakaku.com|~nicovideo.jp
@@ -530,7 +530,9 @@ _ads.xml
 ||4uvjosuc.com^$third-party
 ||8ipztcc1.com^$third-party
 ||adcash.com^$third-party
+||advidi.com^$third-party
 ||adxpansion.com^$third-party
+||awempire.com^$third-party
 ||brandreachsys.com^$third-party
 ||cpmterra.com^$third-party
 ||crowdscience.com^$third-party
@@ -613,8 +615,7 @@ _ads.xml
 ||cam4.com/js/popAds_
 ||chaberi.com/html/br/
 ||chixi.jp/img.php?filename=b
-||chixi.jp/img/neko_banner.gif
-||chixi.jp/js/showlistings.js
+||chixi.jp/img/banner/comico/
 ||cinematoday.jp^*affiliate
 ||cookpad.com/iframe/
 ||fapdu.com/aduxads.php?
@@ -627,6 +628,7 @@ _ads.xml
 ||google.com/uds/?file=ads&
 ||google.com/uds/api/ads/
 ||himado.in/player_ad.php
+||himekuri.net/cgi/cm.cgi
 ||hongfire.com/banner/
 ||inside-games.jp/rakuten/rakuten.html
 ||imagevenue.com/banner
@@ -665,7 +667,6 @@ _ads.xml
 ||miteyo.jp/uploads/ad_other/
 ||mixi.jp^*/mixi/ad/
 ||mixi.jp^*/adnetwork/
-||musen-lan.com/speed/banner/
 ||muvc.com/winopen.js
 ||muvc.com/winlayer.jse
 ||mynavi.jp/ad-1stview.ca.htm?
@@ -698,7 +699,6 @@ _ads.xml
 ||portal.nifty.com/pubc0m/js/ADV/latest/nifty_adv.js?
 ||pya.cc/banner/
 ||redtube.com^$subdocument
-||redtube.com/js/redtube.js
 ||relart.fresheye.com^
 ||rentalcgi.com/img/logo.
 ||s.xvideos.com^$subdocument
@@ -708,12 +708,13 @@ _ads.xml
 ||sponichi.co.jp^*/yaad
 ||sponichi.co.jp/js/shopping/
 ||stickam.jp/images/ja/ads/
+||tatituteto.net/images/banner/
 ||teacup.com/common/js/gmoheader.js
 ||teacup.com/js/gads-image-300x250.js
 ||teacup.com/rss/ads/
 ||techcrunch.com/wp-content/themes/techcrunchmu/ads/
-||tokyo-tube.com/media/player/ads_site.php
-||tokyo-porn-tube.com/media/player/ads_site.php?
+||tokyo-tube.com/media/player/ads_
+||tokyo-porn-tube.com/media/player/ads_
 ||tube8.phncdn.com^*/pb_block/$domain=tube8.com
 ||tvguide.or.jp/content/ad1_
 ||twi-log.com/img-dir/r/
@@ -723,8 +724,6 @@ _ads.xml
 ||uta-net.com/reverse/uploadfiles/banner/
 ||utamap.com/banner/
 ||utamap.com/js/*_google_afc.js
-||vector.co.jp/adinfo/$~stylesheet
-||vector.jp/img_cache/
 ||westatic.com/jsad/$domain=weblio.jp
 ||wikiwiki.jp^*/ads_cus.js
 ||with2.net/js/google/ads_
@@ -794,6 +793,8 @@ _ads.xml
 /dcs.gif?
 /dcw.cgi?
 /dsw.cgi?
+/ga.js
+/ga_social_tracking.js
 /gaAddons.js
 /gaAddons-
 /generate_204
@@ -807,7 +808,6 @@ _ads.xml
 /freelog.
 /hana.cgi?
 /hitgraph.cgi?
-/ga.js
 /kwrite.cgi?
 /load_js.php?
 /log.cgi?
@@ -893,6 +893,7 @@ _ads.xml
 ||bmmetrix.com^$third-party
 ||botchecker.com^$third-party
 ||ca-mpr.jp^$third-party
+||cedexis.com^$third-party
 ||cetrk.com^$third-party
 ||chango.com^$third-party
 ||chartbeat.$third-party
@@ -1016,6 +1017,7 @@ _ads.xml
 
 !---gaico
 ||etahub.com^$third-party
+||hubtraffic.com^$third-party
 ||newrelic.com^$third-party
 ||toplist.cz^$third-party
 ||users.51.la^$third-party
@@ -1121,7 +1123,7 @@ _ads.xml
 ###advert
 ###advertise
 ###advertisement
-~google.co.jp,~google.com,~justin.tv##.ad
+~google.co.jp,~google.com,~justin.tv,~mapion.co.jp##.ad
 ~gmail.com,~mail.google.com##.AD
 ##.ad1
 ##.ad2
@@ -1144,7 +1146,9 @@ _ads.xml
 ~b.hatena.ne.jp,~4shared.com,~google.com,~ranking.cosme.net##[class$="-ad"]
 ~hongfire.com##[class$="_ad"]
 !duckduckgo.com ad無効でbodyにno-ads
-~danbooru.donmai.us,~duckduckgo.com,~uncyclopedia.wikia.com##[class$="-ads"]
+!blogspot 一部テンプレに.has-ads
+!	http://programming-aip.blogspot.jp/
+~danbooru.donmai.us,~duckduckgo.com,~uncyclopedia.wikia.com##[class$="-ads"]:not(.has-ads)
 !プレーヤーコメント枠が消える
 !bodyが.bk_ads
 ~nicovideo.jp,~motogp.com##[class$="_ads"]
@@ -1185,11 +1189,13 @@ _ads.xml
 ##a[href*="/A-affiliate2/"]
 
 ##a[href*="ac.ebis.ne.jp/tr_set.php?"]
-~link.manganavi.jp##a[href*="accesstrade.net/at/c.html?"]
+##a[href*="accesstrade.net/at/"]
+##a[href*="accesstrade.net/sp/"]
 ##a[href*="adrcf.com"]
+##a[href*="bannerbridge.net/clickprod.php?"]
 ##a[href*="click.dtiserv2.com/"]
 ##a[href*="click.j-a-net.jp/"]
-##a[href*="click.linksynergy.com"]:not([href*="=http%3A%2F%2F"]):not([href*="=http%253A%252F%252F"])
+!##a[href*="click.linksynergy.com"]:not([href*="=http%3A%2F%2F"]):not([href*="=http%253A%252F%252F"])
 ##a[href*="cyber-ad01.com"]
 ##a[href*="direct7.net/"]
 ##a[href*="dl.getchu.com/index.php?action=idx&adl_"]
@@ -1204,7 +1210,7 @@ _ads.xml
 ##a[href*="track.xmax.jp/click/index.php?"]
 !ショッピングサーチでYahooの結果項目が何も表示されず
 !nico ichiba
-~aucfan.com,~www.nicovideo.jp##a[href*="valuecommerce.com/servlet/"]
+!~aucfan.com,~www.nicovideo.jp##a[href*="valuecommerce.com/servlet/"]
 ##a[href*="xlisting.jp"]
 
 !色々ヘッダ部分が消える 実験中
@@ -1261,6 +1267,8 @@ basso.to,nazca.co.jp##span[style="font-size:12px; line-height:120%;"]:first-chil
 bing.com##.b_ad
 bing.com##.sb_adsNv2
 bing.com##.sb_adsWv2
+biz-journal.jp##[id^="adEntry"]
+biz-journal.jp###forYouRecommend
 board.sweetnote.com###detail > ul:first-child + div
 board.sweetnote.com##body > div:first-child > br
 board.sweetnote.com##body > div:first-child > br + br
@@ -1352,6 +1360,7 @@ ribbon.to##a[target="g"]
 ribbon.to##a[target="t"]
 ribbon.to##a[target="pt"]
 ribbon.to##a[tareget="rdn"]
+redtube.com###pb_block
 say-move.org###thumb
 sekkaku.net##[summary="AD"]
 sekkaku.net##[summary="広告欄"]
@@ -1365,6 +1374,7 @@ togetter.com###amazon_reco_box
 userstyles.org##div[style="width: 300px; height: 262px;"]
 vector.co.jp###adBox
 vector.co.jp###softDetail ~ *
+n.shop.vector.co.jp###vsSubTableContent
 veoh.com###CM8ShowAd_Rectangle_300x250
 webclap.com##.footer
 webclap.com##.IM_link
@@ -1379,7 +1389,7 @@ xtube.com##.x-row + div
 yaplog.jp###blgft_link
 yu.to###PR_YU_TO
 yu.to##table[bgcolor="#3d6899"][align="center"][width="468"]
-
+yui.at##a[href^="http://nsf.jp/"]
 
 !------------tegaki-------------!
 temp.emotionflow.com##div[style="float: left; width: 300px; height: 250px; background: #f0f0f0;"]
@@ -1937,6 +1947,13 @@ yaraon.blog109.fc2.com##a[href*="amazon.co"]
 
 !痛い
 blog.livedoor.jp##[src="http://blog.livedoor.jp/dqnplus/settings/header.js"] ~ #container > #blogcontainer > #wrapper > #left > #leftbody > .plugin-memo.sidewrapper > .side > br + CENTER
+
+!1000
+||erorinq.org^$domain=1000mg.jp
+1000mg.jp##.main
+1000mg.jp##.title
+1000mg.jp###post-99999
+1000mg.jp###text-3
 
 !--------ホワイトリスト--------!
 @@||ad.thisav.com/player/jw.swf$domain=thisav.com
