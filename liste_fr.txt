@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: DCLck0kYAgi4d4M+7ELbRw
-! Version: 201408110921
+! Checksum: hFkYARp7BjTVk5rgy0L4+A
+! Version: 201408150751
 ! Liste FR ~ Filtres francophones complémentaires à EasyList
 ! Title: Liste FR
 ! Licence : http://www.adblock-listefr.com/A_propos
@@ -2785,6 +2785,7 @@ moteurs-regionaux.com##.normalCoupProjo
 lesechos.fr##.nosparts
 generation-nt.com##.ntSponsored
 challenges.fr##.obs-block.cab-right > .obs-blockcontent.obs-bloc-media
+tempsreel.nouvelobs.com##.obs-pub + .obs-block.cab-right > .obs-blockcontent.obs-bloc-media
 wamiz.com##.orange
 nautiljon.com##.pad
 priceminister.com##.panel_pub
@@ -3409,7 +3410,7 @@ lien-torrent.com##u > a:not([href*="lien-torrent.com"]):not([href*="../"]):not([
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=viedemerde.fr
 @@||viedemerde.fr^$script,~third-party
 viedemerde.fr##.droite > .part + .part.second > div[style="position: relative;"]
-||centhuit.viedemerde.fr^
+||canarretepas.viedemerde.fr^
 ||drums.buporez.com^
 ! notre-planete.info
 @@||cas.criteo.com/delivery/ajs.php?$script,domain=notre-planete.info
@@ -3481,16 +3482,19 @@ viedemerde.fr##.droite > .part + .part.second > div[style="position: relative;"]
 @@||hebmr.cc.st/*.js|$script,third-party
 @@||hmlbz.ez.lv/*.js|$script,third-party
 @@||home.kg/*.js|$script,third-party
+@@||homenet.org/*.js|$script,third-party
 @@||hpc.tw/*.js|$script,third-party
 @@||hrnob.ro.lt/*.js|$script,third-party
 @@||icello.in/*.js|$script,third-party
 @@||inc.gs/*.js|$script,third-party
 @@||info.gf/*.js|$script,third-party
+@@||javafaq.nu/*.js|$script,third-party
 @@||joe.dj/*.js|$script,third-party
 @@||jpe.js/*.js|$script,third-party
 @@||jundy.org/*.js|$script,third-party
 @@||kbosf.ax.lt/*.js|$script,third-party
 @@||leet.la/*.js|$script,third-party
+@@||linuxd.net/*.js|$script,third-party
 @@||linuxd.org/*.js|$script,third-party
 @@||mazdarx7.com/*.js|$script,third-party
 @@||mfkbe.cr.rs/*.js|$script,third-party
@@ -3560,14 +3564,17 @@ viedemerde.fr##.droite > .part + .part.second > div[style="position: relative;"]
 |http://*.ghostnation.org/$third-party,xmlhttprequest
 |http://*.gw.lt/$third-party,xmlhttprequest
 |http://*.home.kg/$third-party,xmlhttprequest
+|http://*.homenet.org/$third-party,xmlhttprequest
 |http://*.hpc.tw/$third-party,xmlhttprequest
 |http://*.icello.in/$third-party,xmlhttprequest
 |http://*.info.gf/$third-party,xmlhttprequest
+|http://*.javafaq.nu/$third-party,xmlhttprequest
 |http://*.joe.dj/$third-party,xmlhttprequest
 |http://*.jpe.js/$third-party,xmlhttprequest
 |http://*.jundy.org/$third-party,xmlhttprequest
 |http://*.keep.se/$third-party,xmlhttprequest
 |http://*.leet.la/$third-party,xmlhttprequest
+|http://*.linuxd.net/$third-party,xmlhttprequest
 |http://*.linuxd.org/$third-party,xmlhttprequest
 |http://*.mazdarx7.com/$third-party,xmlhttprequest
 |http://*.mine.bz/$third-party,xmlhttprequest

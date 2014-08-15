@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: EEBv2XOwZgXsX8+c30P/5A
-! Version: 201408110920
+! Checksum: h3+L4D9DKeH9m8WH+5Dc8w
+! Version: 201408150750
 ! Title: EasyList
-! Last modified: 11 Aug 2014 09:20 UTC
+! Last modified: 15 Aug 2014 07:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.adblockplus.org/
 ! Licence: https://easylist-downloads.adblockplus.org/COPYING
@@ -1236,6 +1236,7 @@
 /add728.
 /addatasandbox?
 /addeals/*
+/addefend.
 /addefend/*
 /addelivery/*
 /addeliverymodule/*
@@ -2311,6 +2312,7 @@
 /adtech;
 /adtech_
 /adtechglobalsettings.js
+/adtechHeader.
 /adtechscript.
 /adtest.
 /adtest/*
@@ -6899,6 +6901,7 @@ _popunder+$popup
 ###SE_ADLINK_LAY_gd
 ###SIDEMENUAD
 ###SRPadsContainer
+###ScoreboardAd
 ###SearchAd_PlaceHolder
 ###SearchAdsBottom
 ###SearchAdsTop
@@ -8891,6 +8894,9 @@ _popunder+$popup
 ###adslist
 ###adslistbox
 ###adslot
+###adslot-2-container
+###adslot-3-container
+###adslot-4-container
 ###adslot1
 ###adslot1173
 ###adslot1189
@@ -9061,15 +9067,29 @@ _popunder+$popup
 ###adv_300x250_2
 ###adv_300x250_3
 ###adv_468x60_content
+###adv_52
+###adv_6
+###adv_62
+###adv_65
+###adv_7
+###adv_70
+###adv_71
 ###adv_728
+###adv_73
+###adv_94
+###adv_96
+###adv_97
 ###adv_Reload
 ###adv_Skin
 ###adv_banner_featured
 ###adv_banner_sidebar
+###adv_bootom
 ###adv_border
 ###adv_box_a
 ###adv_center
 ###adv_config
+###adv_contents
+###adv_contents_tem
 ###adv_google_300
 ###adv_google_728
 ###adv_halfpage
@@ -9081,6 +9101,7 @@ _popunder+$popup
 ###adv_network
 ###adv_overlay
 ###adv_overlay_content
+###adv_r
 ###adv_right
 ###adv_skin
 ###adv_sky
@@ -9109,6 +9130,7 @@ _popunder+$popup
 ###advert-banner-wrap
 ###advert-block
 ###advert-boomer
+###advert-box
 ###advert-column
 ###advert-container-top
 ###advert-display
@@ -9461,6 +9483,7 @@ _popunder+$popup
 ###atlasAdDivGame
 ###atwAdFrame4
 ###autos_banner_ad
+###aw-ad-container
 ###awds-nt1-ad
 ###awesome-ad
 ###awp_advertisements-2
@@ -11457,6 +11480,7 @@ _popunder+$popup
 ###mpubox
 ###mpuholder
 ###mpuholder01
+###mpusLeftAd
 ###mr_banner_topad
 ###mrec-advertisement
 ###mrecAdContainer
@@ -11573,6 +11597,7 @@ _popunder+$popup
 ###openx-text-ad
 ###openx-widget
 ###openx_iframe
+###osDirAd2Post
 ###osads_300
 ###outbrain-paid
 ###outbrainAdWrapper
@@ -12382,7 +12407,9 @@ _popunder+$popup
 ###square-ads
 ###square-sponsors
 ###squareAd
+###squareAdBottom
 ###squareAdSpace
+###squareAdTop
 ###squareAdWrap
 ###squareAds
 ###square_ad
@@ -12521,6 +12548,7 @@ _popunder+$popup
 ###top-ad-menu
 ###top-ad-position-inner
 ###top-ad-rect
+###top-ad-unit
 ###top-ad-wrapper
 ###top-adblock
 ###top-adds
@@ -13604,6 +13632,7 @@ _popunder+$popup
 ##.ad-links
 ##.ad-loaded
 ##.ad-location
+##.ad-location-header
 ##.ad-lower_rec
 ##.ad-lower_river
 ##.ad-lrec
@@ -15112,6 +15141,7 @@ _popunder+$popup
 ##.ads-middle
 ##.ads-middle-top
 ##.ads-module
+##.ads-movie
 ##.ads-mpu
 ##.ads-native-wrapper
 ##.ads-note
@@ -16081,6 +16111,7 @@ _popunder+$popup
 ##.advertising_300x250
 ##.advertising_banner
 ##.advertising_block
+##.advertising_bottom_box
 ##.advertising_box_bg
 ##.advertising_images
 ##.advertising_widget
@@ -16145,10 +16176,12 @@ _popunder+$popup
 ##.adwide
 ##.adwolf-holder
 ##.adword-box
+##.adword-structure
 ##.adword-text
 ##.adword-title
 ##.adwordListings
 ##.adwords
+##.adwords-container
 ##.adwordsHeader
 ##.adwords_in_content
 ##.adwrap
@@ -16612,6 +16645,7 @@ _popunder+$popup
 ##.bottomAdvt
 ##.bottomArticleAds
 ##.bottomBannerAd
+##.bottomBannerAdsSmallBotLeftHolder
 ##.bottomReviewAd
 ##.bottom_ad
 ##.bottom_ad_block
@@ -17778,6 +17812,7 @@ _popunder+$popup
 ##.hss-ad-300x250_1
 ##.hss_static_ad
 ##.hst-contextualads
+##.ht_ad_widget
 ##.html-advertisement
 ##.html-component-ad-filler
 ##.hyad
@@ -19138,6 +19173,7 @@ _popunder+$popup
 ##.sideAdWide
 ##.sideBannerAdsLarge
 ##.sideBannerAdsSmall
+##.sideBannerAdsXLarge
 ##.sideBarCubeAd
 ##.sideBlockAd
 ##.sideBoxAd
@@ -19600,6 +19636,7 @@ _popunder+$popup
 ##.streamAd
 ##.strip-ad
 ##.stripad
+##.sub-feature-ad
 ##.sub-header-ad
 ##.subAdBannerArea
 ##.subAdBannerHeader
@@ -20147,6 +20184,7 @@ _popunder+$popup
 ##.wpfp_custom_ad
 ##.wpi_ads
 ##.wpn_ad_content
+##.wptouch-ad
 ##.wrap-ads
 ##.wrap_boxad
 ##.wrapad
@@ -20383,10 +20421,10 @@ _popunder+$popup
 ##a[href^="https://secure.eveonline.com/ft/?aid="]
 ##a[href^="https://www.oboom.com/ad/"]
 ##a[href^="https://www.share-online.biz/affiliate/"]
-##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?key="][target="_blank"]
-##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?key="][target="_blank"] + .ob_source
-##a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?key="][target="_blank"]
-##a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?key="][target="_blank"] + .ob_source
+##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
+##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source
+##a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"]
+##a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source
 ##div[id^="MarketGid"]
 ##div[id^="YFBMSN"]
 ##div[id^="acm-ad-tag-"]
@@ -20849,7 +20887,7 @@ ebayclassifieds.com,guloggratis.dk#@#.gallery-ad
 time.com#@#.google-sponsored
 gumtree.co.za#@#.googleAdSense
 nicovideo.jp#@#.googleAds
-assetbar.com,burningangel.com#@#.header-ad
+assetbar.com,burningangel.com,intomobile.com#@#.header-ad
 greenbayphoenix.com,photobucket.com#@#.headerAd
 dailytimes.com.pk,swns.com#@#.header_ad
 associatedcontent.com#@#.header_ad_center
@@ -22329,6 +22367,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||gratisnetwork.com^$third-party
 ||greenads.org^$third-party
 ||greenlabelppc.com^$third-party
+||gretzalz.com^$third-party
 ||grllopa.com^$third-party
 ||groovinads.com^$third-party
 ||groupcommerce.com^$third-party
@@ -23190,6 +23229,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||servali.net^$third-party
 ||serve-sys.com^$third-party
 ||servebom.com^$third-party
+||servedbyopenx.com^$third-party
 ||servemeads.com^$third-party
 ||serving-sys.com^$third-party
 ||sev4ifmxa.com^$third-party
@@ -23356,6 +23396,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||techclicks.net^$third-party
 ||technoratimedia.com^$third-party
 ||telemetryverification.net^$third-party
+||teosredic.com^$third-party
 ||teracent.net^$third-party
 ||testfilter.com^$third-party
 ||testnet.nl^$third-party
@@ -24845,6 +24886,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||as.devbridge.com^$third-party
 ||as.jivox.com/jivox/serverapis/getcampaignbysite.php?$object-subrequest
 ||assets.betterbills.com/widgets/
+||associmg.com^*.gif?tag-
 ||astalavista.box.sk/c-astalink2a.jpg
 ||astrology.com/partnerpages/
 ||athena-ads.wikia.com^$third-party
@@ -25988,6 +26030,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||videoweed.es/js/aff.js
 ||videozr.com^$third-party
 ||vidible.tv/placement/vast/
+||vidible.tv/prod/tags/$third-party
 ||vidyoda.com/fambaa/chnls/ADSgmts.ashx?
 ||viglink.com/api/batch^$third-party
 ||viglink.com/api/insert^$third-party
@@ -27265,6 +27308,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||click.livedoor.com^
 ||clicks.superpages.com^
 ||cloudfront.net/*/takeover/$domain=offers.com
+||cloudfront.net/ccmtblv2.png$domain=aim.org
 ||cloudfront.net/hot/ars.dart/$domain=arstechnica.com
 ||cloudzilla.to/cam/directrev.js?
 ||clubhyper.com/images/hannantsbanner_
@@ -27972,6 +28016,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||grapevine.is/media/flash/*.swf
 ||graphic.com.gh/images/banners/
 ||greatandhra.com/images/*_ga_
+||greatdeals.co.ke/images/banners/
 ||greaterkashmir.com/adds_
 ||greatgirlsgames.com/100x100.php
 ||greatgirlsgames.com/a/skyscraper.php
@@ -28187,6 +28232,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||independent.co.uk^*/partners/
 ||indepthafrica.com^*/Banner-canreach.gif
 ||india.com/ads/jw/ova-jw.swf$object-subrequest
+||india.com/zeenews_head2n.jpg
 ||india.com^*-sponsor.
 ||indiainfoline.com/wc/ads/
 ||indianexpress.com^*/banner/
@@ -28594,6 +28640,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||mcsesports.com/images/sponsors/
 ||mcstatic.com^*/billboard_
 ||mcvuk.com/static/banners/
+||mealsandsteals.sandiego6.com^
 ||meanjin.com.au/static/images/sponsors.jpg
 ||mechodownload.com/forum/images/affiliates/
 ||medhelp.org/hserver/
@@ -28877,6 +28924,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||ngohq.com/images/ad.jpg$~collapse
 ||ngrguardiannews.com/images/banners/
 ||nigeriafootball.com/img/affiliate_
+||nigerianyellowpages.com/images/banners/
 ||niggasbelike.com/wp-content/themes/zeecorporate/images/b.jpg
 ||nijobfinder.co.uk/affiliates/
 ||nimbb.com^$domain=my.rsscache.com
@@ -31024,14 +31072,8 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||realhomesex.net/ae/$subdocument
 ||realhomesex.net/floater.js
 ||realhomesex.net/pop/
-||redtube.com/*/*?picurl=$subdocument
-||redtube.com/bid/
-||redtube.com/dib/
-||redtube.com/iframe/
 ||redtube.com/show.php
-||redtube.com/wierd/$subdocument
-||redtube.com^*&asid=$subdocument
-||redtube.com^*&query=$subdocument
+||redtube.com^$subdocument,~third-party
 ||redtube.com^*/banner/
 ||redtubefiles.com^*/banner/
 ||redtubefiles.com^*/skins/
@@ -31225,6 +31267,7 @@ afreesms.com#@#iframe[id^="google_ads_frame"]
 ||youporn-hub.com/lcdscript.js
 ||youporn-hub.com/newlcd.js
 ||youporn.com/watch_postroll/
+||youporn.com^$subdocument,~third-party
 ||yourdailygirls.com/vanilla/process.php
 ||yourdarkdesires.com/1.html
 ||yourdarkdesires.com/2.html
@@ -31326,6 +31369,7 @@ nzherald.co.nz###DivYellowSearch
 wackyarchives.com###Div_b
 wackyarchives.com###Div_s
 cdcovers.cc###EBTopBanner
+englishclub.com###ECtopLB
 javaprogrammingforums.com###EG6209c8f52f7d41a397438a16159bb58e
 parentsconnect.com###ERA_AD_BLOCK
 marthastewart.com###ERA_AD_BLOCK1
@@ -31542,7 +31586,7 @@ textmechanic.com###acolm
 bitcoca.com###active1
 bitcoca.com###active2
 bitcoca.com###active3
-1050talk.com,4chan.org,altervista.org,aol.com,ap.org,awfuladvertisements.com,braingle.com,campusrn.com,chicagonow.com,cocoia.com,cryptoarticles.com,dailydigestnews.com,devshed.com,djmickbabes.com,drakulastream.eu,earthtechling.com,esquire.com,fantom-xp.com,farmville.com,fosswire.com,fullrip.net,g4tv.com,gifts.com,golackawanna.com,google.com,helpwithwindows.com,hknepaliradio.com,ifunnyplanet.com,ifyoulaughyoulose.com,imageshack.us,instapaper.com,internetradiouk.com,investorschronicle.co.uk,jamaicaradio.net,jamendo.com,jigzone.com,learnhub.com,legendofhallowdega.com,libertychampion.com,livevss.net,loveshack.org,lshunter.tv,macstories.net,marketingpilgrim.com,mbta.com,milkandcookies.com,msn.com,msnbc.com,mydallaspost.com,nbcnews.com,neoseeker.com,nepaenergyjournal.com,ninemsn.com.au,nzherald.co.nz,omgili.com,onlinegames.net,onlineradios.in,phonezoo.com,printitgreen.com,psdispatch.com,psu.com,queensberry-rules.com,radio.net.bd,radio.net.pk,radio.or.ke,radio.org.ng,radio.org.nz,radio.org.ph,radioonline.co.id,radioonline.my,radioonline.vn,radiosa.org,radioth.net,radiowebsites.org,rapidshare-downloads.com,reversegif.com,robotchicken.com,saportareport.com,sciencerecorder.com,shop4freebies.com,slidetoplay.com,socialmarker.com,statecolumn.com,streamhunter.eu,technorati.com,theabingtonjournal.com,thetelegraph.com,timesleader.com,totaljerkface.com,totallycrap.com,trinidadradiostations.net,tutorialized.com,twitch.tv,ultimate-rihanna.com,vetstreet.com,video2mp3.net,vladtv.com,wefunction.com,womensradio.com,xe.com,yahoo.com,youbeauty.com,ytconv.net,zootool.com###ad
+1050talk.com,4chan.org,altervista.org,aol.com,ap.org,awfuladvertisements.com,bitcoinmonitor.com,braingle.com,campusrn.com,chicagonow.com,cocoia.com,cryptoarticles.com,dailydigestnews.com,devshed.com,djmickbabes.com,drakulastream.eu,earthtechling.com,esquire.com,fantom-xp.com,farmville.com,fosswire.com,fullrip.net,g4tv.com,gifts.com,golackawanna.com,google.com,helpwithwindows.com,hknepaliradio.com,ifunnyplanet.com,ifyoulaughyoulose.com,imageshack.us,instapaper.com,internetradiouk.com,investorschronicle.co.uk,jamaicaradio.net,jamendo.com,jigzone.com,learnhub.com,legendofhallowdega.com,libertychampion.com,livevss.net,loveshack.org,lshunter.tv,macstories.net,marketingpilgrim.com,mbta.com,milkandcookies.com,msn.com,msnbc.com,mydallaspost.com,nbcnews.com,neoseeker.com,nepaenergyjournal.com,ninemsn.com.au,nzherald.co.nz,omgili.com,onlinegames.net,onlineradios.in,phonezoo.com,printitgreen.com,psdispatch.com,psu.com,queensberry-rules.com,radio.net.bd,radio.net.pk,radio.or.ke,radio.org.ng,radio.org.nz,radio.org.ph,radioonline.co.id,radioonline.my,radioonline.vn,radiosa.org,radioth.net,radiowebsites.org,rapidshare-downloads.com,reversegif.com,robotchicken.com,saportareport.com,sciencerecorder.com,shop4freebies.com,slidetoplay.com,socialmarker.com,statecolumn.com,streamhunter.eu,technorati.com,theabingtonjournal.com,thetelegraph.com,timesleader.com,totaljerkface.com,totallycrap.com,trinidadradiostations.net,tutorialized.com,twitch.tv,ultimate-rihanna.com,vetstreet.com,video2mp3.net,vladtv.com,wefunction.com,womensradio.com,xe.com,yahoo.com,youbeauty.com,ytconv.net,zootool.com###ad
 clip.dj,dafont.com,documentary.net,gomapper.com,idahostatejournal.com,investorschronicle.co.uk,newsinc.com,splitsider.com,theawl.com,thehindu.com,thehindubusinessline.com,timeanddate.com,troyhunt.com,weekendpost.co.zw,wordreference.com###ad1
 btvguide.com,cuteoverload.com,investorschronicle.co.uk,pimpandhost.com,theawl.com,thehairpin.com,troyhunt.com,weekendpost.co.zw###ad2
 btvguide.com,internetradiouk.com,jamaicaradio.net,onlineradios.in,pimpandhost.com,radio.net.bd,radio.net.pk,radio.or.ke,radio.org.ng,radio.org.nz,radio.org.ph,radioonline.co.id,radioonline.my,radioonline.vn,radiosa.org,radioth.net,splitsider.com,theawl.com,thehairpin.com,trinidadradiostations.net,way2sms.com,weekendpost.co.zw###ad3
@@ -31595,6 +31639,7 @@ jpost.com###ads\.gbox\.2
 screencity.pl###ads_left
 privack.com###adsb
 boingboing.net###adskin
+videos.com###adsl
 smh.com.au###adspot-300x600\,300x250-pos-1
 mininova.org###adspot-a + iframe + .maintable[width="100%"][cellspacing="0"]
 videos.com###adst
@@ -31654,6 +31699,7 @@ realbeauty.com###ams_728_90
 harpersbazaar.com###ams_baz_rwd_top
 harpersbazaar.com###ams_baz_sponsored_links
 publicradio.org###amzContainer
+aim.org###amznCharityBanner
 visitsundsvall.se###annons-panel
 hardocp.com###announcements
 peliculas-flv.com###anuncio
@@ -33053,7 +33099,7 @@ daniweb.com,family.ca,nationalparkstraveler.com,thescore.com###leaderboard-conta
 netmagazine.com###leaderboard-content
 wvmetronews.com###leaderboard-footer
 news-gazette.com###leaderboard-full-size
-canadianbusiness.com,macleans.ca,moneysense.ca###leaderboard-header
+canadianbusiness.com,macleans.ca,moneysense.ca,todaysparent.com###leaderboard-header
 idahostatejournal.com,lonepeaklookout.com###leaderboard-middle
 belgrade-news.com###leaderboard-middle-container
 treehousetv.com###leaderboard-play
@@ -33224,6 +33270,7 @@ yahoo.com###mbAds
 internet.com###mbEnd
 maps.google.com###mclip
 google.com.au###mclip_control
+sandiego6.com###mealsandsteals
 thehothits.com###med-rec
 myspace.com###medRec
 yourdailymedia.com###medRectATF
@@ -33317,6 +33364,7 @@ chow.com###mpu_1
 oliveoiltimes.com###mpu_banner1
 instyle.co.uk###mpu_div
 avforums.com###mpu_inpost
+iconosquare.com###mpusCenter
 fox.com,momversation.com,thexfactorusa.com###mrec
 nwherald.com###mrec-atf
 nwherald.com###mrec-btf
@@ -34729,6 +34777,8 @@ kovideo.net###zone0_top_banner_container
 hulkshare.com,rockyou.com###zone1
 hulkshare.com###zone2
 luxury-insider.com###zone_728x90
+asfile.com###zone_bottom
+asfile.com###zone_top
 theonion.com###zoosk
 popcap.com###zrJungle1033_overlay
 popcap.com###zrJungle1033_window
@@ -34748,7 +34798,7 @@ filmsnmovies.com,redbalcony.com##.AdContainer
 verizon.com##.AdIn
 incyprus.com.cy##.Add1st
 colouredgames.com##.AdvGamesList
-journalofaccountancy.com,newvision.co.ug##.Advertisement
+irna.ir,journalofaccountancy.com,newvision.co.ug##.Advertisement
 yedda.com##.Advertising
 hongkiat.com##.BAds
 terradaily.com##.BDTX
@@ -35036,7 +35086,7 @@ bandwidthblog.com,demerarawaves.com,eaglecars.com,earth911.com,pcmag.com,proporn
 dailyvoice.com##.advertise-with-us
 citysearch.com##.advertiseLink
 insiderpages.com##.advertise_with_us
-afro.com,allmusic.com,amctv.com,araratadvertiser.com.au,areanews.com.au,armidaleexpress.com.au,avclub.com,avonadvocate.com.au,barossaherald.com.au,batemansbaypost.com.au,baysidebulletin.com.au,begadistrictnews.com.au,bellingencourier.com.au,bendigoadvertiser.com.au,bigthink.com,bizarremag.com,blacktownsun.com.au,blayneychronicle.com.au,bluemountainsgazette.com.au,boingboing.net,bombalatimes.com.au,boorowanewsonline.com.au,bordermail.com.au,braidwoodtimes.com.au,brimbankweekly.com.au,bunburymail.com.au,businessinsurance.com,busseltonmail.com.au,camdenadvertiser.com.au,camdencourier.com.au,canowindranews.com.au,caranddriver.com,caseyweekly.com.au,caseyweeklycranbourne.com.au,centraladvocate.com.au,centralwesterndaily.com.au,cessnockadvertiser.com.au,classicandperformancecar.com,clickhole.com,colliemail.com.au,colypointobserver.com.au,coomaexpress.com.au,cootamundraherald.com.au,cowraguardian.com.au,crainsnewyork.com,crookwellgazette.com.au,crosswalk.com,dailyadvertiser.com.au,dailygazette.com,dailyliberal.com.au,dailyrecord.com,dandenongjournal.com.au,donnybrookmail.com.au,downloadcrew.com,dunedintv.co.nz,dungogchronicle.com.au,easternriverinachronicle.com.au,edenmagnet.com.au,elliottmidnews.com.au,esperanceexpress.com.au,essentialmums.co.nz,examiner.com.au,eyretribune.com.au,fairfieldchampion.com.au,fastcocreate.com,fastcodesign.com,finnbay.com,forbesadvocate.com.au,frankstonweekly.com.au,gazettextra.com,gematsu.com,gippslandtimes.com.au,gleninnesexaminer.com.au,globest.com,gloucesteradvocate.com.au,goodcast.org,goondiwindiargus.com.au,goulburnpost.com.au,greatlakesadvocate.com.au,grenfellrecord.com.au,guyraargus.com.au,hardenexpress.com.au,hawkesburygazette.com.au,hepburnadvocate.com.au,hillsnews.com.au,hispanicbusiness.com,humeweekly.com.au,huntervalleynews.net.au,imgur.com,inverelltimes.com.au,irishtimes.com,juneesoutherncross.com.au,kansas.com,katherinetimes.com.au,knoxweekly.com.au,lakesmail.com.au,lamag.com,latrobevalleyexpress.com.au,legion.org,lithgowmercury.com.au,liverpoolchampion.com.au,livestrong.com,macarthuradvertiser.com.au,macedonrangesweekly.com.au,macleayargus.com.au,mailtimes.com.au,maitlandmercury.com.au,mandurahmail.com.au,manningrivertimes.com.au,margaretrivermail.com.au,maribyrnongweekly.com.au,marketwatch.com,maroondahweekly.com.au,meltonweekly.com.au,merimbulanewsonline.com.au,merredinmercury.com.au,metservice.com,monashweekly.com.au,mooneevalleyweekly.com.au,moreechampion.com.au,msn.com,mudgeeguardian.com.au,murrayvalleystandard.com.au,muswellbrookchronicle.com.au,myallcoastnota.com.au,nambuccaguardian.com.au,naroomanewsonline.com.au,narrominenewsonline.com.au,nationalgeographic.com,newcastlestar.com.au,northernargus.com.au,northerndailyleader.com.au,northweststar.com.au,nvi.com.au,nynganobserver.com.au,nytimes.com,oberonreview.com.au,onlinegardenroute.co.za,orange.co.uk,parenthood.com,parkeschampionpost.com.au,parramattasun.com.au,pch.com,peninsulaweekly.com.au,penrithstar.com.au,plasticsnews.com,portlincolntimes.com.au,portnews.com.au,portpirierecorder.com.au,portstephensexaminer.com.au,praguepost.com,psychologytoday.com,queanbeyanage.com.au,radioguide.fm,rhsgnews.com.au,riverinaleader.com.au,roxbydownssun.com.au,rubbernews.com,saitnews.co.za,sconeadvocate.com.au,singletonargus.com.au,smallbusiness.co.uk,southcoastregister.com.au,southernhighlandnews.com.au,southernweekly.com.au,southwestadvertiser.com.au,standard.net.au,stawelltimes.com.au,stmarysstar.com.au,stonningtonreviewlocal.com.au,summitsun.com.au,suncitynews.com.au,sunjournal.com,sunraysiadaily.com.au,tennantcreektimes.com.au,tenterfieldstar.com.au,theadvocate.com,theadvocate.com.au,thebeachchannel.tv,thecourier.com.au,theflindersnews.com.au,theforecaster.net,theguardian.com.au,theherald.com.au,theislanderonline.com.au,theleader.com.au,thenortherntimes.com.au,theridgenews.com.au,therural.com.au,tirebusiness.com,townandcountrymagazine.com.au,transcontinental.com.au,twitch.tv,ulladullatimes.com.au,victorharbortimes.com.au,waginargus.com.au,walchanewsonline.com.au,walworthcountytoday.com,washingtonexaminer.com,wauchopegazette.com.au,wellingtontimes.com.au,westcoastsentinel.com.au,westernadvocate.com.au,westernmagazine.com.au,whyallanewsonline.com.au,winghamchronicle.com.au,wollondillyadvertiser.com.au,woot.com,wsj.com,wyndhamweekly.com.au,yasstribune.com.au,youngwitness.com.au##.advertisement
+afro.com,allmusic.com,amctv.com,araratadvertiser.com.au,areanews.com.au,armidaleexpress.com.au,avclub.com,avonadvocate.com.au,barossaherald.com.au,batemansbaypost.com.au,baysidebulletin.com.au,begadistrictnews.com.au,bellingencourier.com.au,bendigoadvertiser.com.au,bigthink.com,bizarremag.com,blacktownsun.com.au,blayneychronicle.com.au,bluemountainsgazette.com.au,boingboing.net,bombalatimes.com.au,boorowanewsonline.com.au,bordermail.com.au,braidwoodtimes.com.au,brimbankweekly.com.au,bunburymail.com.au,businessinsurance.com,busseltonmail.com.au,camdenadvertiser.com.au,camdencourier.com.au,canowindranews.com.au,caranddriver.com,caseyweekly.com.au,caseyweeklycranbourne.com.au,centraladvocate.com.au,centralwesterndaily.com.au,cessnockadvertiser.com.au,classicandperformancecar.com,clickhole.com,colliemail.com.au,colypointobserver.com.au,coomaexpress.com.au,cootamundraherald.com.au,cowraguardian.com.au,crainsnewyork.com,crookwellgazette.com.au,crosswalk.com,dailyadvertiser.com.au,dailygazette.com,dailyliberal.com.au,dailyrecord.com,dandenongjournal.com.au,donnybrookmail.com.au,downloadcrew.com,dunedintv.co.nz,dungogchronicle.com.au,easternriverinachronicle.com.au,edenmagnet.com.au,elliottmidnews.com.au,esperanceexpress.com.au,essentialmums.co.nz,examiner.com.au,eyretribune.com.au,fairfieldchampion.com.au,fastcocreate.com,fastcodesign.com,finnbay.com,forbesadvocate.com.au,frankstonweekly.com.au,gazettextra.com,gematsu.com,gippslandtimes.com.au,gleninnesexaminer.com.au,globest.com,gloucesteradvocate.com.au,goodcast.org,goondiwindiargus.com.au,goulburnpost.com.au,greatlakesadvocate.com.au,grenfellrecord.com.au,guyraargus.com.au,hardenexpress.com.au,hawkesburygazette.com.au,hepburnadvocate.com.au,hillsnews.com.au,hispanicbusiness.com,humeweekly.com.au,huntervalleynews.net.au,imgur.com,inverelltimes.com.au,irishtimes.com,juneesoutherncross.com.au,kansas.com,katherinetimes.com.au,knoxweekly.com.au,lakesmail.com.au,lamag.com,latrobevalleyexpress.com.au,legion.org,lithgowmercury.com.au,liverpoolchampion.com.au,livestrong.com,macarthuradvertiser.com.au,macedonrangesweekly.com.au,macleayargus.com.au,mailtimes.com.au,maitlandmercury.com.au,mandurahmail.com.au,manningrivertimes.com.au,margaretrivermail.com.au,maribyrnongweekly.com.au,marketwatch.com,maroondahweekly.com.au,meltonweekly.com.au,merimbulanewsonline.com.au,merredinmercury.com.au,metservice.com,monashweekly.com.au,mooneevalleyweekly.com.au,moreechampion.com.au,msn.com,mudgeeguardian.com.au,murrayvalleystandard.com.au,muswellbrookchronicle.com.au,myallcoastnota.com.au,nambuccaguardian.com.au,naroomanewsonline.com.au,narrominenewsonline.com.au,nationalgeographic.com,newcastlestar.com.au,northernargus.com.au,northerndailyleader.com.au,northweststar.com.au,nvi.com.au,nynganobserver.com.au,nytimes.com,oberonreview.com.au,onlinegardenroute.co.za,orange.co.uk,parenthood.com,parkeschampionpost.com.au,parramattasun.com.au,pch.com,peninsulaweekly.com.au,penrithstar.com.au,plasticsnews.com,portlincolntimes.com.au,portnews.com.au,portpirierecorder.com.au,portstephensexaminer.com.au,praguepost.com,psychologytoday.com,queanbeyanage.com.au,radioguide.fm,rhsgnews.com.au,riverinaleader.com.au,roxbydownssun.com.au,rubbernews.com,saitnews.co.za,sconeadvocate.com.au,singletonargus.com.au,smallbusiness.co.uk,southcoastregister.com.au,southernhighlandnews.com.au,southernweekly.com.au,southwestadvertiser.com.au,standard.net.au,stawelltimes.com.au,stmarysstar.com.au,stonningtonreviewlocal.com.au,summitsun.com.au,suncitynews.com.au,sunjournal.com,sunraysiadaily.com.au,tennantcreektimes.com.au,tenterfieldstar.com.au,theadvocate.com,theadvocate.com.au,thebeachchannel.tv,thecourier.com.au,theflindersnews.com.au,theforecaster.net,theguardian.com.au,theherald.com.au,theislanderonline.com.au,theleader.com.au,thenortherntimes.com.au,theridgenews.com.au,therural.com.au,tirebusiness.com,townandcountrymagazine.com.au,transcontinental.com.au,twitch.tv,ulladullatimes.com.au,victorharbortimes.com.au,waginargus.com.au,walchanewsonline.com.au,walworthcountytoday.com,washingtonexaminer.com,wauchopegazette.com.au,wellingtontimes.com.au,westcoastsentinel.com.au,westernadvocate.com.au,westernmagazine.com.au,whyallanewsonline.com.au,winghamchronicle.com.au,wollondillyadvertiser.com.au,woot.com,wsj.com,wyndhamweekly.com.au,yasstribune.com.au,yellowpages.ca,youngwitness.com.au##.advertisement
 fieldandstream.com##.advertisement-fishing-contest
 4v4.com,bn0.com,culttt.com,flicks.co.nz,shieldarcade.com,thethingswesay.com,who.is##.advertisements
 afr.com,afrsmartinvestor.com.au,afternoondc.in,allmusic.com,brw.com.au,chicagobusiness.com,cio.co.ke,ft.com,glamour.co.za,gq.co.za,hellomagazine.com,kat.ph,kickass.to,kickassunblock.info,newsweek.com,ocregister.com,orangecounty.com,radio.com,softarchive.net,theadvocate.com,tvnz.co.nz##.advertising
@@ -35400,6 +35450,7 @@ motogp.com##.block-motogp_adserver
 pddnet.com##.block-panels-mini
 philstar.com##.block-philstar-ad
 praguemonitor.com##.block-praguetvads
+football-espana.net,football-italia.net##.block-story-footer-simag-banner
 accesshollywood.com##.block-style_deals
 laboratoryequipment.com##.block-title
 ibtimes.com##.block-x90
@@ -35745,6 +35796,7 @@ pwinsider.com##.content-right
 crmbuyer.com,ectnews.com,linuxinsider.com,macnewsworld.com,technewsworld.com##.content-tab-slinks
 fijilive.com##.content-top
 futuresmag.com##.content-top-banner
+yellowpages.bw,yellowpages.co.ls,yellowpages.co.zm##.contentBannerHolderLarge
 girlsgogames.com##.contentListSkycontainer
 seocentro.com##.contentTDRight[valign="top"] > table[width="280"][border="0"][align="center"][cellspacing="0"][cellpadding="2"]:first-child
 kohit.net##.content_banner_right
@@ -35814,6 +35866,8 @@ bts.ph,btscene.eu##.ddl_det_anon
 btscene.eu##.ddl_srch
 hdtvtest.co.uk##.deal
 azstarnet.com,poststar.com,wcfcourier.com##.deal-container
+kmov.com##.dealLeft
+kmov.com##.dealRight
 adn.com,bellinghamherald.com,bradenton.com,centredaily.com,fresnobee.com,heraldonline.com,idahostatesman.com,islandpacket.com,ledger-enquirer.com,macon.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sanluisobispo.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com##.dealSaverWidget
 oneindia.in##.deal_lists
 msnbc.msn.com,nbcnews.com##.deals
@@ -36325,6 +36379,7 @@ ihavenet.com##.ihn-ad-1
 ihavenet.com##.ihn-ad-2
 ihavenet.com##.ihn-ad-3
 filetram.com##.ilividDownload
+intomobile.com##.im_970x90
 sen.com##.image_caption_div
 imgfave.com##.image_login_message
 globalgrind.com##.imagecache-article_images_540
@@ -36731,6 +36786,7 @@ blinkbox.com##.mpupnl
 digitimes.com##.mr-box
 411.com##.mr_top
 ebay.com,foodnetwork.com,funnyordie.com,goodhopefm.co.za,hgtv.com,hgtvremodels.com,jozifm.co.za,metrofm.co.za,thewest.com.au##.mrec
+yellowpages.com.au##.mrec-container
 pep.ph##.mrec-wrapper
 plus.im##.ms-creative-position-header
 pcworld.com##.msReminderBadgeBanner
@@ -36818,7 +36874,7 @@ infobetting.com,searchenginejournal.com##.odd
 wusa9.com##.ody-ob-taboola-wrapper
 lifehack.org##.offer
 yasni.com##.offerbox
-nationalpost.com##.offers
+livescience.com,nationalpost.com,space.com##.offers
 polishlinux.org##.oio-badge
 mindsetforsuccess.net##.ois_wrapper
 okcupid.com##.okad
@@ -37157,6 +37213,8 @@ informationweek.com##.resources
 opendns.com,website-unavailable.com##.response
 macmillandictionary.com##.responsive_cell_whole
 wrongdiagnosis.com##.result_adv
+yellowpages.bw,yellowpages.co.ls,yellowpages.co.zm##.result_item_gold
+yellowpages.bw,yellowpages.co.ls,yellowpages.co.zm##.result_item_silver
 rapid-search-engine.com##.results > table[style="margin-top:15px;width:540px"]:first-child
 hotbot.com##.results-top
 yellowbook.com##.resultsBanner
@@ -37560,7 +37618,7 @@ blekko.com##.spons-res
 njuice.com,wwitv.com##.sponsb
 donegalnews.com,fermanaghherald.com,strabanechronicle.com,ulsterherald.com##.sponsered_links
 timesofindia.indiatimes.com##.sponserlink
-1310news.com,2oceansvibe.com,360haven.com,964eagle.co.uk,abc22now.com,airliners.net,animepaper.net,app.com,ar15.com,austinist.com,b100quadcities.com,bexhillobserver.net,blackpoolfc.co.uk,blackpoolgazette.co.uk,bloomberg.com,bognor.co.uk,bostonstandard.co.uk,brisbanetimes.com.au,brothersoft.com,businessinsider.com,canberratimes.com.au,cbslocal.com,chicagoist.com,chichester.co.uk,concordmonitor.com,dcist.com,domainincite.com,eastbourneherald.co.uk,electricenergyonline.com,gamingcloud.com,gothamist.com,halifaxcourier.co.uk,hastingsobserver.co.uk,hellomagazine.com,homelife.com.au,informationweek.com,isearch.igive.com,khak.com,kkyr.com,kosy790am.com,kpbs.org,ktla.com,kygl.com,laist.com,lcfc.com,lep.co.uk,limerickleader.ie,lmgtfy.com,mix933fm.com,networkworld.com,news1130.com,newsweek.com,pastie.org,pogo.com,portsmouth.co.uk,power959.com,prestontoday.net,proactiveinvestors.com,proactiveinvestors.com.au,publicradio.org,rock1049.com,rte.ie,scotsman.com,sfist.com,shieldsgazette.com,skysports.com,smh.com.au,spaldingtoday.co.uk,star935fm.com,sunderlandecho.com,techonomy.com,theage.com.au,thescarboroughnews.co.uk,thestar.co.uk,theworld.org,userscripts.org,variety.com,verizon.net,videolan.org,washingtonpost.com,watoday.com.au,wayfm.com,wfnt.com,wigantoday.net,wklh.com,wscountytimes.co.uk,wsj.com,yorkshireeveningpost.co.uk,yorkshirepost.co.uk,zdnet.co.uk,zuula.com##.sponsor
+1310news.com,2oceansvibe.com,360haven.com,964eagle.co.uk,abc22now.com,airliners.net,animepaper.net,app.com,ar15.com,austinist.com,b100quadcities.com,bexhillobserver.net,blackpoolfc.co.uk,blackpoolgazette.co.uk,bloomberg.com,bognor.co.uk,bostonstandard.co.uk,brisbanetimes.com.au,brothersoft.com,businessinsider.com,canberratimes.com.au,cbslocal.com,chicagoist.com,chichester.co.uk,concordmonitor.com,dcist.com,domainincite.com,eastbourneherald.co.uk,electricenergyonline.com,europages.co.uk,gamingcloud.com,gothamist.com,halifaxcourier.co.uk,hastingsobserver.co.uk,hellomagazine.com,homelife.com.au,informationweek.com,isearch.igive.com,khak.com,kkyr.com,kosy790am.com,kpbs.org,ktla.com,kygl.com,laist.com,lcfc.com,lep.co.uk,limerickleader.ie,lmgtfy.com,mix933fm.com,networkworld.com,news1130.com,newsweek.com,pastie.org,pogo.com,portsmouth.co.uk,power959.com,prestontoday.net,proactiveinvestors.com,proactiveinvestors.com.au,publicradio.org,rock1049.com,rte.ie,scotsman.com,sfist.com,shieldsgazette.com,skysports.com,smh.com.au,spaldingtoday.co.uk,star935fm.com,sunderlandecho.com,techonomy.com,theage.com.au,thescarboroughnews.co.uk,thestar.co.uk,theworld.org,userscripts.org,variety.com,verizon.net,videolan.org,washingtonpost.com,watoday.com.au,wayfm.com,wfnt.com,wigantoday.net,wklh.com,wscountytimes.co.uk,wsj.com,yorkshireeveningpost.co.uk,yorkshirepost.co.uk,zdnet.co.uk,zuula.com##.sponsor
 search.comcast.net##.sponsor-6
 bbc.com##.sponsor-container
 pcmag.com##.sponsor-head
@@ -39003,6 +39061,7 @@ moneymakergroup.com##div[style="float: left; margin: 1px;"] > a[href^="http://ww
 moneymakergroup.com##div[style="float: left; margin: 1px;"]:last-child
 upi.com##div[style="float: left; padding-left: 9px; margin:0 8px 0 0; width: 760px;"]
 mpgh.net##div[style="float: left; padding: 5px 5px; width: 250px; height: 75px;"]
+nashvillescene.com##div[style="float: left; position: relative; width: 300px; height: 100px; background-image: url('http://clatl.com/ads/mySceneBknd.jpg'); background-repeat: no-repeat; margin-bottom: 10px;"]
 civil.ge##div[style="float: left; text-align: center; border:  solid 1px #efefef; width: 320px; height: 90px;"]
 wheels.ca##div[style="float: left; width: 237px; height: 90px; margin-right: 5px;"]
 usedcars.com##div[style="float: left; width: 263px; text-align: center; vertical-align: top"]
@@ -39339,6 +39398,7 @@ ipaddress.com##div[style="margin:32px 0;text-align:center"]
 bitsnoop.com##div[style="margin:4px 0 8px 0; padding:0; width:100%; height:90px; text-align:center;"]
 bikeexchange.com.au##div[style="margin:60px 0 20px 0;"]
 jpopasia.com##div[style="margin:auto auto; text-align:center; margin-bottom:10px; width:300px; height:280px;"]
+into-asia.com##div[style="margin:auto;  width:728px; height:105px; margin-top:20px"]
 tv-stream.to##div[style="margin:auto;text-align:center;padding:5px 80px;font-weight:bold;font-size:12px;color:red;"]
 quackit.com##div[style="margin:auto;width:180px;height:250px;text-align:center;background:#fff url('/pix/ads/ad_zappyhost_search_box_180x250.gif') no-repeat top left;"]
 codeproject.com##div[style="margin:auto;width:728px;height:90px;margin-top:10px"]
@@ -40021,7 +40081,10 @@ tigerdirect.ca##div[style="width:977px; clear:both; margin-top:2px; height:90px;
 gametracker.com##div[style="width:980px; height:48px; margin-bottom:5px; overflow:hidden;"]
 ndtv.com##div[style="width:980px; margin:3px  auto;"]
 apphit.com##div[style="width:980px;height:100px;clear:both;margin:0 auto;"]
+teleservices.mu##div[style="width:980px;height:50px;float:left; "]
 search.ch##div[style="width:994px; height:250px"]
+nigerianyellowpages.com##div[style="z-index: 85; cursor: pointer; display: block; border: 0; margin: 0px; overflow: hidden; padding-left: 2px; width: 200px; height: 200px;"]
+nigerianyellowpages.com##div[style="z-index: 85; cursor: pointer; display: block; border: 0; margin: 0px; overflow: hidden; padding-left: 2px; width: 200px; height: 300px;"]
 topvideo.cc,topvideo.tv##div[style="z-index: 99999; position: fixed; width: 100%; background: none repeat scroll 0% 0% rgb(251, 236, 173); overflow: hidden; border-bottom: 1px solid rgb(112, 112, 112); top: 0px; left: 0px; margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: Verdana,Geneva,sans-serif;"]
 isohunt.to##div[style="z-index:1000;position:relative;top:0;left:0;width:100%;background-color:#fbecad;overflow:hidden;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#707070;top:0;left:0;margin:0;padding:0;color:#000;font-family:Verdana,Geneva,sans-serif;background-position:initial initial;background-repeat:initial initial;"]
 independent.com##div[style^="background-image:url('http://media.independent.com/img/ads/ads-bg.gif')"]
@@ -40533,6 +40596,7 @@ font-cat.com##table[width="732"]
 airlinequality.com##table[width="736"]
 learnaboutmovieposters.com##table[width="744"][border="2"][bgcolor="#000000"][align="center"]
 gpdownloads.co.nz##table[width="760"][height="120"]
+sharedata.co.za##table[width="760"][height="60"]
 inquirer.net##table[width="780"][height="90"]
 asciiribbon.org,worldometers.info##table[width="800"]
 blackstarnews.com##table[width="800"][height="110"]
@@ -40857,7 +40921,6 @@ porntack.com###BannerUnder
 cam4.com###Cam4IMslider
 hentai-foundry.com###DLsite_blog_parts_000
 starsex.pl###FLOW_frame
-parenthood.com###PG_link
 thestranger.com###PersonalsScroller
 fantasti.cc###TB_overlay
 fantasti.cc###TB_window
@@ -40873,14 +40936,9 @@ dagay.com###add_1
 dagay.com###add_2
 dachix.com,dagay.com###add_3
 gaytube.com,pornomovies.com,turboimagehost.com,xvideos.com###ads
-videos.com###adsl
 eporner.com###adv
-maxjizztube.com###adv_bootom
-pornologo.com###adv_contents
-pornologo.com###adv_contents_tem
-pornologo.com###adv_r
 hiddencamsvideo.com###advert
-hairyclassic.com,qruq.com,todaysparent.com###advertisement
+hairyclassic.com,qruq.com###advertisement
 pornative.com###advertisers
 timtube.com###advertising
 fleshbot.com###afleft
@@ -41142,6 +41200,7 @@ gayboystube.com##.bancentr
 fux.com##.baner-column
 xchimp.com##.bannadd
 chaturbate.com,dansmovies.com,fecaltube.com,imageporter.com,playvid.com,private.com,videarn.com,vidxnet.com,wanknews.com,watchhentaivideo.com,xbabe.com,yourdailygirls.com##.banner
+adultpornvideox.com##.banner-box
 tube8.com##.banner-container
 definebabe.com##.banner1
 celebritymovieblog.com##.banner700
@@ -41641,6 +41700,8 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||123people.us/trackads/display?zones=$script,domain=123people.co.uk|123people.com|123people.es|123people.fr|123people.pl|123people.se
 @@||192.168.$xmlhttprequest
 @@||192.168.*/images/adv_
+@@||196.30.218.174/admentor/sirius_sdo_top.htm$subdocument,domain=sharedata.co.za
+@@||196.30.218.174/admentor/top_$subdocument,domain=fundsdata.co.za
 @@||208.100.24.244^$script,domain=sankakucomplex.com
 @@||209.222.8.217/crossdomain.xml$object-subrequest,domain=~p2p.adserver.ip
 @@||247realmedia.com/realmedia/ads/adstream_sx.ads/www.tetrisfriends.com/$script,domain=tetrisfriends.com
@@ -41662,6 +41723,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||6waves.com/js/adshow.js
 @@||76streetnetwork.com/images/banners/$image,~third-party
 @@||9msn.com.au/Services/Service.axd?callback=ninemsn_ads_contextualTargeting_$script,domain=ninemsn.com.au
+@@||9msn.com.au/share/com/adtrack/adtrack.js$domain=ninemsn.com.au
 @@||9msn.com.au^*/ads/ninemsn.ads$script
 @@||a.collective-media.net^$object-subrequest,domain=wrc.com
 @@||a.giantrealm.com/assets/vau/grplayer*.swf
@@ -43283,7 +43345,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@.jpg#$domain=desionlinetheater.com|lag10.net|mac2sell.net|movie1k.net|uploadlw.com
 @@.jpg|$object-subrequest,domain=cbs.com
 @@.min.js$domain=ftlauderdalewebcam.com|nyharborwebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com
-@@.png#$domain=android-zone.org|anime2enjoy.com|anizm.com|anonytext.tk|backin.net|better-explorer.com|chrissmoove.com|lordpyrak.net|minecraft-forum.net|myksn.net|stream2watch.me
+@@.png#$domain=android-zone.org|anime2enjoy.com|anizm.com|anonytext.tk|backin.net|better-explorer.com|chrissmoove.com|hostyd.com|lordpyrak.net|minecraft-forum.net|myksn.net|stream2watch.me
 @@.png?*#$domain=mypapercraft.net|xlocker.net
 @@.png?ad_banner=$domain=majorleaguegaming.com
 @@.png?advertisement_$domain=majorleaguegaming.com
@@ -43309,7 +43371,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@|http://*.pw^$script,third-party,domain=cbs.com
 @@|http://*/pubads.$object-subrequest,domain=cbs.com
 @@|http://popsads.com^$script,domain=filmovizija.com
-@@|https://$image,script,domain=kissanime.com
+@@|https://$script,domain=kissanime.com
 @@|https://$script,third-party,domain=cbs.com|eventhubs.com
 @@||1337loungelive.com^*/advertisement.js
 @@||140cc.v.fwmrm.net/ad/l/1?s=$script,domain=gametrailers.com
@@ -43336,6 +43398,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||admin.brightcove.com^$object-subrequest,domain=tvn.pl|tvn24.pl
 @@||adnxs.com^$script,domain=kissanime.com
 @@||ads.avazu.net^$subdocument,domain=casadossegredos.tv|xuuby.com
+@@||ads.clubedohardware.com.br/www/delivery/fl.js
 @@||ads.clubedohardware.com.br/www/delivery/spcjs.php$script
 @@||ads.lzjl.com/newserving/showad.php$domain=everythingon.tv
 @@||ads.milliyet.cubecdn.net/winwords/adhood/winwords2.client.js$domain=dizi-mag.com
@@ -43379,6 +43442,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||atomicmpc.com.au/ads/chico.js$domain=atomicmpc.com.au
 @@||atresplayer.com/adsxml/$object-subrequest
 @@||atresplayer.com/static/js/advertisement.js
+@@||atwriting.com^$script,domain=writing.com
 @@||auditude.com/player/js/lib/aud.html5player.js
 @@||avaxhome.cc/assets/dtim*.js
 @@||avforums.com/*ad$script
@@ -43394,6 +43458,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||boincstats.com/js/adframe.js
 @@||boxxod.net/advertisement.js
 @@||brightcove.com^*/AdvertisingModule.swf$object-subrequest,domain=channel5.com
+@@||btspread.com/eroex.js
 @@||buysellads.com/ac/bsa.js$domain=jc-mp.com
 @@||bwriters.com^$script,domain=writing.com
 @@||bywarrior.com^$elemhide
@@ -43505,6 +43570,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||g.doubleclick.net/|$object-subrequest,domain=cbs.com
 @@||gallery.aethereality.net/advertisement.js
 @@||game-advertising-online.com/img/icon_stoplight.jpg?$domain=kissanime.com
+@@||game-advertising-online.com/index.php?section=serve&id=7740&subid=$subdocument,domain=anizm.com
 @@||gamecopyworld.com/games/$script
 @@||gamecopyworld.eu/games/$script
 @@||gamereactor.$script,~third-party
@@ -43512,6 +43578,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||gdataonline.com/exp/textad.js
 @@||getoffmyinternets.net/gomipress/wp-content/plugins/blockalyzer-adblock-counter/$image,script
 @@||go4up.com/advertisement.js
+@@||google-it.info^$script,domain=hqq.tv
 @@||googlesyndication.com/favicon.ico$domain=multiup.org
 @@||googleusercontent.com^*#-$image,domain=tvportugalhd.org
 @@||hackers.co.id/adframe/adframe.js
@@ -43520,12 +43587,14 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||hardware.no^$script
 @@||hcpc.co.uk/*ad$script,domain=avforums.com
 @@||hexawebhosting.com/adcode.js
+@@||hostyd.com^$elemhide
 @@||hpfanficarchive.com^*/advertisement.js
 @@||hqpdb.com/ads/banner.jpg?
 @@||hqq.tv^$elemhide
 @@||i-stream.pl^*/advertisement.js
 @@||i.imgur.com^*#.$image,domain=newmusicforpeople.org
 @@||ilive.to/js/advert*.js
+@@||ilive.to^$elemhide
 @@||ilix.in^$script,domain=ilix.in|priva.us
 @@||imageontime.com/ads/banner.jpg?
 @@||images.bangtidy.net^$elemhide
@@ -43544,6 +43613,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||juba-get.com^*/advertisement.js
 @@||junksport.com/watch/advertisement.js
 @@||juzupload.com/advertisement.js
+@@||kissanime.com/ads/$subdocument
 @@||kissanime.com/ads/adprotect300.aspx$subdocument
 @@||kissanime.com^$elemhide
 @@||lag10.net^$elemhide
@@ -43567,6 +43637,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||majorleaguegaming.com^$elemhide
 @@||majorleaguegaming.com^*.png?*=$image
 @@||makemehost.com/js/ads.js
+@@||maxcheaters.com/public/js/jsLoader.js
 @@||media.eventhubs.com/images/*#$image
 @@||megadown.us/advertisement.js
 @@||megahd.me^*/advertisement.js
@@ -43588,6 +43659,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||monsoonads.com:8080/monsoon1/preparead?$object-subrequest,domain=bollywoodhungama.com
 @@||moon-faucet.tk/advertisement.js
 @@||movie1k.net^$elemhide
+@@||mp3clan.com^*/advertisement.js
 @@||mrtzcmp3.net/advertisement.js
 @@||msecnd.net/scripts/compressed.pop.lib.v2.5.js$domain=filmovizija.com
 @@||multiup.org/img/theme/*?$image
@@ -43618,11 +43690,11 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||own3d.tv/templates/*adsense$object-subrequest
 @@||own3d.tv^*_adsense.$object-subrequest
 @@||pagead2.googlesyndication.com/pagead/expansion_embed.js$domain=ffiles.com|full-ngage-games.blogspot.com|kingofgames.net|megaallday.com|ninjaraider.com|nonags.com|upfordown.com|wtf-teen.com
-@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=360haven.com|9bis.net|9tutorials.com|afreesms.com|agame.com|atlanticcitywebcam.com|bitcoiner.net|borfast.com|chrissmoove.com|darkreloaded.com|dreamscene.org|drivearabia.com|dsero.com|file4go.com|free.smsmarkaz.urdupoint.com|ftlauderdalebeachcam.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gnomio.com|ilix.in|keywestharborwebcam.com|kingofgames.net|korean-candy.com|leecher.us|litecoiner.net|livenewschat.eu|lordpyrak.net|mailbait.info|misheel.net|morganhillwebcam.com|moviemistakes.com|mypapercraft.net|needrom.com|niresh.co|niresh12495.com|nonags.com|numberempire.com|nyharborwebcam.com|omegadrivers.net|portarubawebcam.com|portbermudawebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com|portnywebcam.com|preemlinks.com|priva.us|rapid8.com|rotoinfo.com|settlersonlinemaps.com|smashgamez.com|tech-blog.net|techydoor.com|tipstank.com|trutower.com|unlocktheinbox.com|upfordown.com|uploadlw.com|urlink.at|washington.edu|whatismyip.com|winterrowd.com|yellowbridge.com
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=360haven.com|9bis.net|9tutorials.com|afreesms.com|agame.com|atlanticcitywebcam.com|bitcoiner.net|borfast.com|chrissmoove.com|darkreloaded.com|dreamscene.org|drivearabia.com|dsero.com|file4go.com|free.smsmarkaz.urdupoint.com|ftlauderdalebeachcam.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gnomio.com|hostyd.com|ilix.in|keywestharborwebcam.com|kingofgames.net|korean-candy.com|leecher.us|litecoiner.net|livenewschat.eu|lordpyrak.net|mailbait.info|misheel.net|morganhillwebcam.com|moviemistakes.com|mypapercraft.net|needrom.com|niresh.co|niresh12495.com|nonags.com|numberempire.com|nyharborwebcam.com|omegadrivers.net|portarubawebcam.com|portbermudawebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com|portnywebcam.com|preemlinks.com|priva.us|rapid8.com|rotoinfo.com|settlersonlinemaps.com|smashgamez.com|tech-blog.net|techydoor.com|tipstank.com|trutower.com|unlocktheinbox.com|upfordown.com|uploadlw.com|urlink.at|washington.edu|whatismyip.com|winterrowd.com|yellowbridge.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chrissmoove.com|gnomio.com|leecher.us|mypapercraft.net|niresh.co|niresh12495.com|nonags.com|settlersonlinemaps.com|unlocktheinbox.com
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=tvportugalhd.org|zuuk.pw
 @@||pagead2.googlesyndication.com/pagead/js/lidar.js$domain=majorleaguegaming.com
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=360haven.com|9bis.net|9tutorials.com|afreesms.com|agame.com|atlanticcitywebcam.com|bbc.com|bitcoiner.net|carsfromitaly.info|codeasily.com|darkreloaded.com|dreamscene.org|drivearabia.com|dsero.com|everythingon.tv|ffiles.com|file4go.com|filmovizija.com|filmovizija.net|free.smsmarkaz.urdupoint.com|freewaregenius.com|ftlauderdalebeachcam.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gifmagic.com|ilix.in|keywestharborwebcam.com|kingofgames.net|korean-candy.com|litecoiner.net|livenewschat.eu|lordpyrak.net|megaallday.com|misheel.net|morganhillwebcam.com|moviemistakes.com|needrom.com|ninjaraider.com|numberempire.com|nyharborwebcam.com|omegadrivers.net|photos.essence.com|portarubawebcam.com|portbermudawebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com|portnywebcam.com|preemlinks.com|priva.us|rapid8.com|readersdigest.com.au|rotoinfo.com|seeingwithsound.com|smashgamez.com|tech-blog.net|techydoor.com|tipstank.com|top100clans.com|trutower.com|tv-kino.net|upfordown.com|uploadlw.com|urlink.at|virginmedia.com|warp2search.net|washington.edu|winterrowd.com|wtf-teen.com|yellowbridge.com
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=360haven.com|9bis.net|9tutorials.com|afreesms.com|agame.com|atlanticcitywebcam.com|bbc.com|bitcoiner.net|carsfromitaly.info|codeasily.com|darkreloaded.com|dreamscene.org|drivearabia.com|dsero.com|everythingon.tv|ffiles.com|file4go.com|filmovizija.com|filmovizija.net|free.smsmarkaz.urdupoint.com|freewaregenius.com|ftlauderdalebeachcam.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gifmagic.com|hostyd.com|ilix.in|keywestharborwebcam.com|kingofgames.net|korean-candy.com|litecoiner.net|livenewschat.eu|lordpyrak.net|megaallday.com|misheel.net|morganhillwebcam.com|moviemistakes.com|needrom.com|ninjaraider.com|numberempire.com|nyharborwebcam.com|omegadrivers.net|photos.essence.com|portarubawebcam.com|portbermudawebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com|portnywebcam.com|preemlinks.com|priva.us|rapid8.com|readersdigest.com.au|rotoinfo.com|seeingwithsound.com|smashgamez.com|tech-blog.net|techydoor.com|tipstank.com|top100clans.com|trutower.com|tv-kino.net|upfordown.com|uploadlw.com|urlink.at|virginmedia.com|warp2search.net|washington.edu|winterrowd.com|wtf-teen.com|yellowbridge.com
 @@||pandora.com/static/ads/
 @@||partner.googleadservices.com/gpt/pubads_impl_$script,domain=baseball-reference.com|basketball-reference.com|hockey-reference.com|pro-football-reference.com|sports-reference.com
 @@||perkuinternete.lt/modules/mod_jpayday/js/advertisement.js
@@ -43670,6 +43742,7 @@ literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; 
 @@||series-cravings.info/wp-content/plugins/wordpress-adblock-blocker/$script
 @@||sheepskinproxy.com/js/advertisement.js
 @@||shimory.com/js/show_ads.js
+@@||siamfishing.com^*/advert.js
 @@||sixpool.me^$image,domain=majorleaguegaming.com
 @@||smartadserver.com/call/pubj/*/M/*/?$domain=antena3.com|atresplayer.com|lasexta.com
 @@||smartadserver.com/call/pubj/*/S/*/?$domain=antena3.com|atresplayer.com|lasexta.com
@@ -44176,6 +44249,7 @@ accounts.google.com#@#.adwords
 @@||fuqer.com^*/advertisement.js
 @@||hentaimoe.com/js/advertisement.js
 @@||imgadult.com/js/advertisement.js
+@@||javpee.com/eroex.js
 @@||lfporn.com^$elemhide
 @@||mongoporn.com^*/adframe/$subdocument
 @@||nightchan.com/advertisement.js

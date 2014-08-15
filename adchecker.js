@@ -14,7 +14,8 @@ var filterFiles = [
     "fanboy-annoyance.txt",
     "filters.txt",
     "latvian-list.txt",
-    "liste_fr.txt"
+    "liste_fr.txt",
+    "malwaredomains_full.txt"
 ];
 
 var fc = require('./filterClasses.js');
