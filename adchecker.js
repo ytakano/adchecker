@@ -92,7 +92,7 @@ reader.on('line', function (line) {
         }
     }
 
-    console.log(result);
+    console.log(JSON.stringify(result));
 });
 
 process.stdin.on('end', function () {
