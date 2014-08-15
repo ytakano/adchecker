@@ -1,22 +1,26 @@
-var filterFiles = [
-    "Adblock_Plus_list.txt",
-    "Liste_AR.txt",
-    "abp_jp.txt",
-    "abpindo.txt",
-    "adblock.txt",
-    "adblock_bg.txt",
-    "easylist.txt",
-    "easylistdutch.txt",
-    "easylistgermany.txt",
-    "easylistitaly.txt",
-    "easylistlithuania.txt",
-    "easyprivacy.txt",
-    "fanboy-annoyance.txt",
-    "filters.txt",
-    "latvian-list.txt",
-    "liste_fr.txt",
-    "malwaredomains_full.txt"
-];
+var filterFiles = {
+    "Adblock_Plus_list.txt": "Japan 1",
+    "Liste_AR.txt": "Arabia",
+    "abp_jp.txt": "Japan 2",
+    "abpindo.txt": "Indonesia",
+    "adblock.txt": "Norway",
+    "adblock_bg.txt": "Bulgaria",
+    "easylist.txt": "General",
+    "easylistdutch.txt": "Netherland",
+    "easylistgermany.txt": "Germaly",
+    "easylistitaly.txt": "Italy",
+    "easylistlithuania.txt": "Lithuania",
+    "easyprivacy.txt": "English 1",
+    "fanboy-annoyance.txt": "English 2",
+    "filters.txt": "Czech and Slovakia",
+    "liste_fr.txt": "France",
+    "malwaredomains_full.txt": "Malware",
+    "easylistchina.txt": "China",
+    "void-gr-filters.txt": "Greek",
+    "rolist.txt": "Romania",
+    "ab.txt": "Estonia",
+    "advblock.txt": "Russia"
+};
 
 var fc = require('./filterClasses.js');
 
@@ -26,7 +30,7 @@ function filterRule (rule) {
 }
 
 filterRule.prototype.addFile = function (file) {
-    this.files[file] = true;
+    this.files[file] = filterFiles[file];
 }
 
 filterRule.prototype.matches = function (url) {
@@ -44,8 +48,8 @@ function loadFilter() {
     var filters = {};
     var n = 0;
 
-    for (var i = 0; i < filterFiles.length; i++) {
-        var text  = fs.readFileSync(filterFiles[i], 'utf8');
+    for (i in filterFiles) {
+        var text  = fs.readFileSync(i, 'utf8');
         var rules = text.split('\n').slice(1);
 
         for (var j = 0; j < rules.length; j++) {
@@ -55,14 +59,14 @@ function loadFilter() {
             }
 
             if (rules[j] in filters) {
-                filters[rules[j]].addFile(filterFiles[i]);
+                filters[rules[j]].addFile(i);
             } else {
                 var rule = new filterRule(rules[j]);
 
                 if (rule.filter == null)
                     continue;
 
-                rule.addFile(filterFiles[i]);
+                rule.addFile(i);
 
                 filters[rules[j]] = rule;
                 n++;
@@ -89,7 +93,7 @@ reader.on('line', function (line) {
     for (var key in filters) {
         if (filters[key].matches(line)) {
             result['result'] = true;
-            result['rules'][filters[key].filter.text] = Object.keys(filters[key].files);
+            result['rules'][filters[key].filter.text] = filters[key].files;
         }
     }
 

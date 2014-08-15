@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: BTUxj13LDpqaNvfEHOwoNw
-! Version: 201408150751
+! Checksum: GP3BBaMe800JeIk6Fr2u+w
+! Version: 201408151001
 ! Title: EasyList Germany
 ! EasyList Germany - Deutsche Ergänzung zu EasyList
-! Last modified: 15 Aug 2014 07:51 UTC
+! Last modified: 15 Aug 2014 10:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.adblockplus.org/
 ! Licence: https://easylist-downloads.adblockplus.org/COPYING
@@ -7536,6 +7536,7 @@ pcwelt.de##div[id^="google_ads_"]
 @@||connect.de^$elemhide
 @@||connected-home.de^$elemhide
 @@||crackajack.de^*/advertising.js
+@@||cuiron.de^$document,subdocument,domain=audio.de|colorfoto.de|connect.de|connected-home.de|pc-magazin.de|video-magazin.de
 @@||cuiron.de^$image,domain=epochtimes.de|gamona.de|lustich.de
 @@||cuiron.de^$script,domain=gamona.de|lustich.de
 @@||data-ero-advertising.com/impopup/layer.js$domain=berlin-nutten.com
