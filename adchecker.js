@@ -1,12 +1,10 @@
-// npm:
-//     lru-cache
-//     mongodb
-
-var path = require('path');
-var fs   = require('fs');
-var dir  = path.dirname(fs.realpathSync(__filename));
-
-var LRU = require("lru-cache");
+var path  = require('path');
+var fs    = require('fs');
+var LRU   = require("lru-cache");
+var fc    = require('./filterClasses.js');
+var dir   = path.dirname(fs.realpathSync(__filename));
+var mdb   = 'wide1409';
+var mcol  = 'http';
 var cache = LRU(10000);
 
 var filterFiles = {
@@ -25,7 +23,7 @@ var filterFiles = {
 //    "fanboy-annoyance": "Fanboy Annoyance",
 //    "filters": "Czech and Slovakia",
 //    "liste_fr": "France",
-//    "malwaredomains_full": "Malware",
+    "malwaredomains_full": "Malware",
 //    "easylistchina": "China",
 //    "void-gr-filters": "Greek",
 //    "rolist": "Romania",
@@ -33,7 +31,6 @@ var filterFiles = {
 //    "advblock": "Russia"
 };
 
-var fc = require('./filterClasses.js');
 
 function filterRule (rule) {
     this.files  = {};
@@ -90,13 +87,9 @@ function loadFilter() {
     return filters;
 }
 
-if (process.argv.length < 4) {
-    console.log('usage: node jstore.js db collection');
-    process.exit(1);
-}
 
 var mongo_client = require('mongodb').MongoClient;
-var uri = 'mongodb://127.0.0.1:27017/' + process.argv[2];
+var uri = 'mongodb://127.0.0.1:27017/' + mdb;
 
 console.log(uri);
 
@@ -104,23 +97,14 @@ mongo_client.connect(uri, function(err, db) {
     if (err)
         throw err;
 
-    var collection = db.collection(process.argv[3]);
+    var collection = db.collection(mcol);
+    var filters    = loadFilter();
 
-    var reader = require('readline').createInterface({
-        input: process.stdin,
-        output: process.stderr
-    });
-
-    var filters = loadFilter();
-
-    reader.setPrompt('');
-    reader.prompt();
-
-    reader.on('line', function (line) {
+    process.on('message', function(msg) {
         var result;
 
         try {
-            result = JSON.parse(line);
+            result = msg['obj'];
             result['date'] = new Date();
 
             var uri;
@@ -140,7 +124,7 @@ mongo_client.connect(uri, function(err, db) {
 
             if (c == undefined) {
                 for (var key in filters) {
-                    if (filters[key].matches(line)) {
+                    if (filters[key].matches(uri)) {
                         is_ads = true;
                         ads_rules[filters[key].filter.text] = filters[key].files;
                     }
@@ -164,12 +148,12 @@ mongo_client.connect(uri, function(err, db) {
 
                 result['ads'] = rules;
 
-                console.log(uri);
-                console.log(rules);
+                //console.log(uri);
+                //console.log(rules);
             }
 
             collection.insert(result, function(err, result) {
-                if (err) console.warn(err.message);
+                if (err) console.log(err.message);
             });
         } catch (e) {
             console.log(e);
