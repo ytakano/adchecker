@@ -32,8 +32,8 @@ function get_url(data) {
     }
 }
 
-function write_url_count(Response, body, count) {
-    body += '<p>' + count + ' requests are captured<br>';
+function write_total_bytes(Response, body, counts) {
+    body += ' (' + (counts[0]['client'] + counts[0]['server']) + ' bytes) requests were received<br>';
 
     dbcol.find({ads: {$exists: true}}).count(function(err, count) {
         if (err) {
@@ -45,8 +45,8 @@ function write_url_count(Response, body, count) {
     });
 }
 
-function write_ads_count(Response, body, count) {
-    body += count + ' requests are for ads</p>';
+function write_ads_total_bytes(Response, body, counts) {
+    body += ' (' + (counts[0]['client'] + counts[0]['server']) + ' bytes) requests to ads were received<br>';
 
     dbcol.find({ads: {$exists: true}})
         .sort({date: -1})
@@ -58,6 +58,39 @@ function write_ads_count(Response, body, count) {
 
             write_url(Response, body, result);
         });
+}
+
+function write_url_count(Response, body, count) {
+    body += '<p>' + count;
+
+    dbcol.aggregate([{$group : {'_id': null,
+                                'client': {'$sum': "$client.length"},
+                                'server': {'$sum': "$server.length"}}}],
+                   function(err, result) {
+                       if (err) {
+                           Response['500'](err);
+                           return;
+                       }
+
+                       write_total_bytes(Response, body, result);
+                   });
+}
+
+function write_ads_count(Response, body, count) {
+    body += count;
+
+    dbcol.aggregate([{$match : {'ads': {$exists : true}}},
+                     {$group : {'_id': null,
+                                'client': {$sum: '$client.length'},
+                                'server': {$sum: '$server.length'}}}],
+                    function(err, result) {
+                        if (err) {
+                            Response['500'](err);
+                            return;
+                        }
+
+                        write_ads_total_bytes(Response, body, result);
+                    });
 }
 
 function write_url(Response, body, result) {
@@ -125,7 +158,7 @@ http.createServer(function(request, response) {
                 Response['500'](err);
                 return;
             }
-            var body = '<html><head><style type="text/css">table,td,th{border:2px #2b2b2b solid;word-wrap:break-word;}</style><title>Recent HTTP Requests to Ads</title><body><h1>Recent HTTP Requests of Attendees of the Camp to Ads</h1>'
+            var body = '<html><head><style type="text/css">table,td,th{border:2px #2b2b2b solid;word-wrap:break-word;}</style><title>Recent HTTP Requests to Ads</title><body><h1>Recent HTTP Requests of the Camp to Ads</h1><div style="text-align: right;">by Yuuki Takano &lt;ytakano@wide.ad.jp&gt;</div>'
 
             write_url_count(Response, body, count);
         });

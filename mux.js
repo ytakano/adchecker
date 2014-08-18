@@ -5,8 +5,8 @@ var path = require('path');
 var fs   = require('fs');
 var cp   = require('child_process');
 var dir  = path.dirname(fs.realpathSync(__filename));
-var adchekcer = dir + '/muxtest.js'
-var children = new Array(8);
+var adchekcer = dir + '/adchecker.js'
+var children = new Array(18);
 var idx = 0;
 
 var reader = require('readline').createInterface({
